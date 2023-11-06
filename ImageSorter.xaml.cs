@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ImageSorter
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ImageSorterWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ImageSorterWindow : Window
     {
-        public MainWindow()
+        public ImageSorterWindow()
         {
             InitializeComponent();
         }
