@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,13 @@ namespace ImageSorter
         public ImageSorterWindow()
         {
             InitializeComponent();
+        }
+
+        private void open_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                Console.WriteLine(openFileDialog.FileName); 
         }
     }
 }
